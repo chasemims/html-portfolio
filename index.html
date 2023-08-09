@@ -1,36 +1,162 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>M1msy Development</title>
+        <style>
+            body{
+                background-color: #2C3639;
+                font-family: serif;
+            }
+            h1{
+                color:#DCD7C9;
+                text-align:center;
+                font-size:3rem;
+            }
+            .one{
+                /*border-radius: 20px;
+                background-color: #3F4E4F;
+                padding:3px;
+                display:flex;
+                flex-wrap:wrap;
+                text-align:center;
+                justify-content:center;
+                align-items:center;
+                padding-left: 20px;
+                padding-right: 20px;
+                width:450px;*/
+                display:flex;
+                flex-wrap:wrap;
+                justify-content:center;
+                align-items:center;
+                gap:1rem;
+                font-size:1rem;
+                text-align:center;
+                margin:10px;
+                flex-shrink:0;
+                
+                
+                
+            }
+            .projects{
+                display:flex;
+                flex-wrap:wrap;
+                justify-content:center;
+                align-items:center;
+                gap:1rem;
+                font-size:1rem;
+                text-align:center;
+                margin:10px;
+            }
+            .ind-projects{
+                background-color: #3F4E4F;
+                padding:10px;
+                border-radius:20px;
+            }
+            .portfolio{
+                background-color: #3F4E4F;
+                padding:10px;
+                border-radius:20px;
+                margin:10px;
+            }
+            .one p{
+               text-align:center;
+                color:#A27B5C;
+                font-size:1.5rem;
+            }
+            .home-page{
+                /*border-radius: 20px;
+                background-color: #3F4E4F;
+                padding:3px;
+                position:relative;
+                top: 10px;
+                margin:auto;
+                padding-left: 20px;
+                padding-right: 20px;
+                width:125px;
+                text-align:center;*/
+                display:flex;
+                flex-wrap:wrap;
+                justify-content:center;
+                align-items:center;
+                gap:1rem;
+                font-size:1rem;
+                text-align:center;
+                margin:10px;
+            }
+            #home-page{
+                background-color: #3F4E4F;
+                padding:5px;
+                border-radius:5px;
+                font-size:1rem;
+                flex-shrink:0;
+            }
+            .about-contact{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                gap:1rem;
+                font-size:1rem;
+                margin:10px;
+                flex-shrink:0;
+            }
+            .about{
+                background-color: #3F4E4F;
+                padding:5px;
+                border-radius:5px;
+            }
+            .contact{
+                background-color: #3F4E4F;
+                padding:5px;
+                border-radius:5px;
+            }
+            img{
+                border-radius:5px;
+            }
+            #home-page{
+                color:#DCD7C9;
+            }
+            a{
+                color:#A27B5C;
+            }
+            footer{
+                top:400px;
+                text-align:center;
+                position:relative;
+                margin:auto;
+                color:black;
+            }
+        </style>
     </head>
     <body>
-        <h1>Chase Mims's Portfolio</h1>
-        <H2>I'm a Web Developer</H2>
-        <hr>
+        <div class="one">
+            <div class="portfolio">
+            <h1>Chase Mims's Portfolio</h1>
+            <p id="first-p">Bits & Pieces of What I've Done So Far</p>
+            </div>
+        </div>
+
+        <div class="projects">
+            <div id="movie" class="ind-projects">
         <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
         <img src="./assets/images/movie.png" height="200" alt="Movie Ranking Project Preview"/>
+            </div>
+            <div id="birthday" class="ind-projects">
         <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
         <img src="./assets/images/birthday.png" height="200" alt="Birthday Invite Project Prview"/>
-        <hr>
-        <a href="./public/about.html">About Me</a>
-        <a href="./public/contact.html">Contact Me</a>
-        
+            </div>
+        </div>
+
+        <div class="about-contact">
+        <a class="about" href="./public/about.html">About Me</a>
+        <a class="contact" href="./public/contact.html">Contact Me</a>
+        </div>
+
+        <div class="home-page">
+            <a id="home-page" href="https://chasemims.github.io/welcome/">My Home Page</a>
+        </div>
+        <footer>
+            2023 Mims, Chase
+        </footer>
     </body>
 </html>
