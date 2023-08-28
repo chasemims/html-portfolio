@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>M1msy Development</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
         <style>
             body{
                 background-color: #2C3639;
@@ -41,7 +43,7 @@
             }
             .portfolio{
                 background-color: #3F4E4F;
-                padding:10px;
+                
                 border-radius:20px;
                 margin:10px;
             }
@@ -107,13 +109,16 @@
         </style>
     </head>
     <body>
-        <div class="one">
-            <div class="portfolio">
+        <div class="container mt-5">
+            <div class="one px-5">
+            <div class="portfolio px-5 pt-2">
             <h1>Chase Mims's Portfolio</h1>
             <p id="first-p">Bits & Pieces of What I've Done So Far</p>
             </div>
+            </div>
         </div>
 
+        <div class="container my-5">
         <div class="projects">
             <div id="movie" class="ind-projects">
                 <a href="./public/movie-ranking.html">Movie Ranking Project</a><br/>
@@ -136,17 +141,25 @@
                 <img src="./assets/images/Tindog.png" height="200"alt="Snapshot of Tindog Project"/>
             </div>
         
-
-        <div class="about-contact">
-        <a class="about" href="./public/about.html">About Me</a>
-        <a class="contact" href="./public/contact.html">Contact Me</a>
+         </div>
         </div>
 
-        <div class="home-page">
-            <a id="home-page" href="https://chasemims.github.io/welcome/">My Home Page</a>
+        <div class="container">
+
+            <div class="about-contact">
+               <a class="about" href="./public/about.html">About Me</a>
+                <a class="contact" href="./public/contact.html">Contact Me</a>
+            </div>
+
+            <div class="home-page ">
+                <a id="home-page" href="https://chasemims.github.io/welcome/">My Home Page</a>
+            </div>
+
         </div>
+         
         <footer>
             2023 Mims, Chase
         </footer>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>
